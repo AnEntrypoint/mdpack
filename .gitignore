@@ -10,6 +10,7 @@
 .gm/turn-state.json
 .gm/next-step.md
 .gm/residual-check-fired
+.gm/.gm-continue-count
 
 node_modules/
 dist/
