@@ -7,6 +7,9 @@
 .gm/last-instruction-ts
 .gm/last-prompt.txt
 .gm/long-gap-retry-state
+.gm/turn-state.json
+.gm/next-step.md
+.gm/residual-check-fired
 
 node_modules/
 dist/
