@@ -1,0 +1,15 @@
+.gm/pw-sock-*/
+.gm/exec-spool/
+.gm/memories/
+.gm/disciplines/codeinsight-manifest/
+.gm/disciplines/codeinsight-vec/
+.gm/last-dispatch-ts
+.gm/last-instruction-ts
+.gm/last-prompt.txt
+.gm/long-gap-retry-state
+
+node_modules/
+dist/
+mdpix-out/
+*.log
+sh.exe.stackdump

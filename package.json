@@ -1,0 +1,37 @@
+{
+  "name": "mdpix",
+  "version": "0.1.0",
+  "description": "Render any Markdown file into dense PNG image pages plus a text factsheet, for token-efficient LLM context injection.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "mdpix": "./dist/bin/mdpix.js"
+  },
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "import": "./dist/src/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx bin/mdpix.ts"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.53"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "@types/node": "^22.10.2"
+  }
+}
