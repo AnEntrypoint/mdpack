@@ -1,1 +1,9 @@
-[]
+- id: commit-and-push-release-workflow
+  subject: Commit .github/workflows/release.yml, updated package.json (repository field), and updated .gitignore/README if touched, then push to origin main via git verbs (git_finalize), confirming remote is now AnEntrypoint/mdpix.
+  status: pending
+- id: witness-first-live-workflow-run
+  subject: After pushing, watch the actual GitHub Actions run triggered on AnEntrypoint/mdpix for the release workflow to confirm it goes green (build+bump+publish succeed for real), not just that the YAML looks correct -- fix and re-push if red.
+  status: pending
+- id: edge-case-workflow-loop-guard
+  subject: Verify the loop-guard (skip if commit message contains chore(release):) actually prevents the bump-commit's own push from re-triggering another release run -- confirmed by observing the real Actions run history after the first release completes, not by code inspection alone.
+  status: pending

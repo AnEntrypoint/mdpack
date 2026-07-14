@@ -4,11 +4,15 @@
   "description": "Render any Markdown file into dense PNG image pages plus a text factsheet, for token-efficient LLM context injection.",
   "type": "module",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnEntrypoint/mdpix.git"
+  },
   "engines": {
     "node": ">=18"
   },
   "bin": {
-    "mdpix": "./dist/bin/mdpix.js"
+    "mdpix": "dist/bin/mdpix.js"
   },
   "main": "./dist/src/index.js",
   "types": "./dist/src/index.d.ts",
